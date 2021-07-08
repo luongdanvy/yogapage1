@@ -1,0 +1,390 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#yogapage
+{
+	width:100%;
+	height: auto;
+	color: white;
+	font-family: nunito;font-size: 14pt;
+	overflow: scroll;
+	scroll-behavior: smooth;
+}
+@font-face
+{
+	font-family: nunito;
+	src: url("../font/Nunito-Regular.ttf");
+}
+.mymenu
+{
+	width: 100%;
+	height: 180px;
+	z-index: 1000;
+	position: fixed;
+	background-color: #dfe6e9;
+}
+.logo
+{
+	width: 20%;
+	height: 200px;
+	float: left;
+	margin: 25px 0px 0px 100px;
+}
+.mymenu1
+{
+	width: 70%;
+	float: right;
+}
+
+.mymenu1 ul
+{
+	list-style: none;
+	padding: 0px;
+}
+.mymenu1 ul li
+{
+	padding: 30px;
+	float: left;
+	position: relative;
+	
+}
+.mymenu1 ul li a
+{
+	text-decoration: none;
+	color:#161616;
+}
+
+.mymenu1 ul li:hover a
+{
+	color:#C6602A;
+}
+
+.mymenu1 ul li ul
+{
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	visibility: hidden;
+}
+
+
+.mymenu1 ul li ul li
+{
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	border: 1px #C0C0C0 solid;
+	
+}
+.mymenu1 ul li ul li a
+{
+	
+	color:#161616;
+}
+.mymenu1 ul li ul li:hover a
+{
+
+	color:#161616;
+}
+
+.mymenu1 ul li:hover ul
+{
+	visibility: visible;
+}
+
+#myslider
+{
+	width: 100%;
+	height: 1000px;
+	padding-top: 200px;
+	overflow: hidden;
+}
+
+/*Day la Silder*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 22px;
+	margin: 380px -300px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+	animation: bounceInUp 5s 1.5s infinite;
+	overflow:hidden;
+}
+
+/*Day la button*/
+.mybutton {
+ 	border: 1px ;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+	border-radius: 50px;
+position: absolute;
+	margin: 300px -88%;
+	background-color: #C6602A;
+	animation: bounceInUp 5s 1.5s infinite;
+	overflow: hidden;
+}
+
+.mybutton:hover{ 
+	background-color:#2A2A49;
+border: none;}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade2 {
+ 
+	0%   {transform: scale(1.025);opacity: .5}
+  25%  {transform: scale(1.02)}
+  50%  {transform: scale(1.015)}
+  100% {transform: scale(1.01)}
+	 50%  {transform: scale(1.005)}
+  100% {transform: scale(1);opacity: 1}
+}
+
+@keyframes fade2 {
+0%   {transform: scale(1.025);opacity: .5}
+  25%  {transform: scale(1.02)}
+  50%  {transform: scale(1.015)}
+  100% {transform: scale(1.01)}
+	 50%  {transform: scale(1.005)}
+  100% {transform: scale(1);opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width : 923px ){
+  .prev, .next,.text {font-size: 11px}
+}
+
+#aboutus
+{
+	width: 100%;
+	height:900px;
+	background-color:whitesmoke;
+	padding-top:150px;
+}
+.picaboutus
+{
+	width: 50%;
+	height:500px;
+	float: left;margin: 5% 0px 0px 5%;
+}
+.textaboutus
+{
+	width: 30%;
+	height: 500px;
+	float:right;
+	color: #191919;
+	font-size: 14pt;
+	margin: 5% 15% 0 0;
+}
+@font-face
+{
+	font-family: sinikabold;
+	src: url("../font/Signika-SemiBold.ttf");
+}
+
+.mybuttonmain {
+ 	border: 2.5px #C6602A solid;
+  color:#191919;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+	border-radius: 50px;
+position: absolute;
+	background-color:none;
+	margin: 40px -300px 0px;
+}
+
+.mybuttonmain:hover{ 
+	background-color:#C6602A;
+border: none;}
+
+.textproduct
+{
+	width: 100%;
+	height: 300px;
+	margin: 60px 0px 0px 35%;
+}
+#product
+{
+	width: 80%;
+	height: 800px;
+	padding-top: 150px;
+}
+.productmini
+{
+	width: 30%;
+	float: left;
+	padding: 5px 5px 0px 5px;
+	transition:all 0.3s ease;
+}
+.productmini2
+{
+	width: 100%;
+	height: 50%;
+	float: left;
+	padding: 5px;
+	transition:all 0.3s ease;
+	overflow:hidden;
+}
+
+.fadeproduct img {
+        opacity:1;
+}
+.fadeproduct:hover img{
+        opacity:0.8;
+}
+.growproduct:hover img
+{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+#teacherteam{width: 100%;height: 800px;padding-top: 200px;}
+#teacherteam a{text-decoration: none;}
+#teacherteam a:hover {color: black;}
+#teacherteam a {color:#C6602A;}
+.picteacher{width: 30%;height: 500px; float: left; background-color:whitesmoke;padding: 0px 10px;margin: 0px 0px 0px 2.5%;}
+.picteacher3D:hover
+{
+        box-shadow:
+                1px 1px #C6602A,
+                2px 2px #C6602A,
+                3px 3px #C6602A;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+#lotusnumber
+{
+	width: 100%;
+	background-color:#dfe6e9;margin: 50px 0 0 0; 
+}
+.mycnumber{width: 60%;float: right;}
+#phieuhen{width: 100%;height: 800px;background: url("../images/bg-appointment");}
+.formphieuhen
+{
+	width: 40%;
+	float: left;
+	margin: 20% 0 0 10%;
+	color: #4E4E4E;
+	
+}
+
+input{width: 45%;
+	height: 40px;border-radius: 50px;border: none;}
+select{width: 45%;height: 40px;border-radius: 50px;border: none;}
+
+.mybutton2 {
+ 	border: 2px #C6602A solid;
+  color:#191919;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+	border-radius: 50px;
+position: absolute;
+	background-color:none;
+}
+
+.mybutton2:hover{ 
+	background-color:#C6602A;
+border: none;}
+
+#myvideo {width: 100%; height: 650px;padding-top: 100px;}
+
+#lienhe{width: 100%; height: 200px;background-color: #F3E8E5;}
+.myicon{width: 20%;float: right;margin: 50px 0 0 0;}
+
+
+
+
+
+

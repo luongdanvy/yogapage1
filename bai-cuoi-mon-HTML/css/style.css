@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #dfe6e9;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+	margin: 70px -60px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter .counter-icon {
+  color: #828282;
+}
+
+.counter .counter-timer {
+  font-weight: 400;
+	font-size: 45px;
+	color: #1B1B1B;
+}
+
+.counter .counter-title {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+	color: #4E4E4E;
+	font-size: 18pt;
+}
+
+.counter #percent::after {
+  content: "%";
+  font-weight:100;
+}
